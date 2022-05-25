@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Teste</title>
+</head>
+<body class="area">
+    <header class="cabecalho">
+
+        <button class="text-decoration-none" id="btn-mobile"> <img src="_imagens/menu_hamburguer.svg" alt=""></button>
+
+        <div class="logo">
+            <a href="index.html"><img class="imagem_logo" src="_imagens/logo.png" alt=""></a>
+        </div>
+        <nav id="nav" class="menu">
+
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Eventos</a></li>
+                <li><a href="index.html">Usuários</a></li>
+                <li><a href="index.html">Relatórios</a></li>
+            </ul>
+        </nav>
+        <div class="usuario">
+            <div class="user" onclick=""><img src="_imagens/user.png" alt=""></div>
+            <div onclick="" class="login">Entrar</div>
+
+        </div>
+        <script src="_javascript/botao.js"></script>
+     </header>
+     <section>
+        <div class="estetica"></div>
+        <div class="fundo">
+            <div class="container">
+                <div class="mensagem" ><p>Olá <b> faça login,</b> para selecionar uma das opções abaixo:</p></div>
+
+                <div onclick="acao()" class="opcao" id="opcao_1" type="button" >
+
+                    <img class="opcao_img" src="_imagens/icone-eventos.png" alt="">
+                    <p class="opcao_texto">Meus Eventos</p>
+                </div>
+
+                <div onclick="acao_2()" class="opcao">
+                    <img class="" src="_imagens/icone-usuarios.png" alt="">
+                    <p class="opcao_texto">Usuários</p>
+                </div>
+
+                <div onclick="acao_3()" class="opcao">
+                    <img class="" src="_imagens/icone-relatorios.png" alt="">
+                    <p class="opcao_texto">Relatórios</p>
+                </div>
+
+                <div id="informacao" class="informacao">
+                    <header class="cabecalho_informacao">
+                        <p class="titulo">Eventos</p>
+                        <button onclick="fechar()" class="fechar">X</button>
+                    </header>
+                </div>
+
+                <div id="informacao" class="informacao_2">
+                    <header class="cabecalho_informacao_2">
+                        <p class="titulo_2">Usuários</p>
+                        <button onclick="fechar()" class="fechar">X</button>
+                    </header>
+                </div>
+
+                <div id="informacao" class="informacao_3">
+                    <header class="cabecalho_informacao_3">
+                        <p class="titulo_3">Relatórios</p>
+                        <button onclick="fechar()" class="fechar">X</button>
+                    </header>
+                </div>
+
+            </div>
+        </div>
+     </section>
+     <footer class="rodape">
+         <div class="teste">
+            <p class="ideia">Ideia 2001</p>
+            <p class="copyright">&#169;Copyright 2019 - Todos os direitos reservados</p>
+        </div>
+     </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,522 @@
+body{
+    background-color:#F1F1F1 ;
+    
+}
+
+.cabecalho{
+    align-items: center;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+}
+
+
+.estetica{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #F08910;
+}
+
+.fundo{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin-top: -75px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}   
+
+
+.mensagem{
+    width: 100%;
+    text-align: center;
+
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5 ;
+    width: 250px;
+    height: 250px;
+    margin: 0 0 100px 40px;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -25px 20px -30px inset;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+}
+
+.opcao_img{
+    width: 90px;
+
+}
+
+.opcao_texto{
+  position: absolute;
+  margin-top: 160px;
+  font-weight: bold;
+
+}
+
+.menu li {
+    display: inline;
+    margin: 0 0 0 40px; 
+    position: relative;
+    
+}
+
+
+.menu a{
+    font-weight: 500;
+    color: #87918a;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    color: #000000;
+    
+}
+
+.menu li :after{
+    content: "";
+    position: absolute;
+    background-color: #F08910;
+    height: 3px;
+    width: 0;
+    bottom: -15px;
+    left: 0;   
+}
+
+.menu li :hover:after{
+    width: 100%;
+
+}
+
+.logo{
+    display: flex;
+
+}
+
+
+.usuario{
+    display: flex;
+    margin: 0 0 0 150px;
+    align-items: center;
+    
+}
+
+.login{
+    margin: 0 0 0 15px;
+    text-decoration: underline;
+    color: #F08910;
+    font-size: 15px;
+    padding-right: 5px;
+
+}
+
+.login:hover{
+    cursor: pointer;
+
+}
+
+.teste{
+    width: 100%;
+    height: 73px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.ideia{
+    color: #F08910;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+.copyright{
+    color: #ffffff;
+    margin-left: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+button img{
+    max-width: 35px;
+
+}
+
+button{
+    background: none;
+    border: none;
+
+}
+
+button:hover{
+    cursor: pointer;
+    
+}
+
+#btn-mobile{
+    display: none;
+
+}
+
+@media (max-height: 800px){
+
+    .teste{
+        width: 100%;
+        height: 73px;
+        display: flex;
+        position: absolute;
+        bottom: unset;
+        background-color: #000000;
+        align-items: center;
+        justify-content: center;
+       
+    
+    }
+
+}
+
+
+@media (max-width: 1000px){
+
+    .usuario{
+        display: flex;
+        margin: 0 0 0 100px;
+        align-items: center;
+        
+    }
+    
+}
+
+
+
+@media (max-width: 1005px) {
+    
+    .usuario{
+        display: flex;
+        margin: 0 0 0 50px;
+        align-items: center;
+        
+        
+    }
+
+    #btn-mobile{
+        margin-right: 30px;
+        background-color: none;
+        display: block;
+        margin-top: 0px;
+        outline-style: none;
+
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        right: 0px;
+        background-color: #ffffff;
+        margin-top: 50px;
+        width: 100%;
+
+    }
+
+    .menu li{
+        display: block;
+        margin: 35px;
+
+    }
+
+    #nav.active #menu{
+        display: block;
+
+    }
+
+    .opcao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5 ;
+        width: 250px;
+        height: 250px;
+        margin: 0 0 100px 40px;
+        border-radius: 15%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -25px 20px -30px inset;
+        cursor: pointer;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        
+    }
+
+}
+
+
+@media (max-width: 910px){
+
+    .opcao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5 ;
+        width: 250px;
+        height: 250px;
+        margin: 0 0 0 40px;
+        border-radius: 15%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -25px 20px -30px inset;
+        cursor: pointer;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        
+    }
+
+}
+
+
+
+@media (max-width: 620px){
+
+    .container{
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        margin-top: -75px;
+        background-color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+
+    } 
+
+    
+    .teste{
+        width: 100%;
+        height: 73px;
+        display: flex;
+        position: absolute;
+        bottom: unset;
+        background-color: #000000;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .opcao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5 ;
+        width: 250px;
+        height: 250px;
+        margin: 15px 30px 0 40px;
+        border-radius: 15%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -25px 20px -30px inset;
+        cursor: pointer;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        
+    }
+
+
+}
+
+
+@media (max-width: 460px){
+
+   .imagem_logo{
+       width: 150px;
+
+   }
+
+   .login{
+       display: none;
+
+   }
+
+   .ideia{
+        color: #F08910;
+        font-size: 10px;
+        margin-top: 5px;
+   
+   }
+
+    .copyright{
+        color: #ffffff;
+        margin-left: 5px;
+        font-size: 10px;
+        margin-top: 5px;
+
+    }
+
+
+}
+
+@media (max-width: 320px){
+    
+    .usuario{
+        display: flex;
+        margin: 0 0 0 15px;
+        align-items: center;
+        
+    }
+    
+    button img{
+        max-width: 30px;
+    }
+
+}
+
+
+/*opcao*/
+
+.informacao{
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 800px;
+    background-color: #ffffff;
+    display: none;
+    box-shadow:0px 1px 5px #000;
+}
+
+
+.cabecalho_informacao{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #F08910;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 20px;
+
+}
+
+.fechar{
+    outline-style: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+.titulo{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+
+.informacao_2{
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 800px;
+    background-color: #ffffff;
+    display: none;
+    box-shadow:0px 1px 5px #000;
+}
+
+
+.cabecalho_informacao_2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #F08910;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 20px;
+
+}
+
+.titulo_2{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+
+.informacao_3{
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 800px;
+    background-color: #ffffff;
+    display: none;
+    box-shadow:0px 1px 5px #000;
+}
+
+
+.cabecalho_informacao_3{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #F08910;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 20px;
+
+}
+
+.titulo_3{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
